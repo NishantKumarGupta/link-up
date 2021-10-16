@@ -1,6 +1,14 @@
-body{
-    margin: 0;
-    padding: 0;
+#video-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+video {
+    height: 300px;
+    width: 400px;
+    object-fit: cover;
+    padding: 8px;
 }
 
 .main {
@@ -80,29 +88,9 @@ body{
 .main__chat_window {
     flex-grow: 1;
     overflow-y: auto;
-
-    
-}
-::-webkit-scrollbar {
-    width: 8px;
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-    background: #343434;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: #888;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #555;
-}
-
-.messages{
+.messages {
     color: white;
     list-style: none;
 }
@@ -123,7 +111,7 @@ body{
     color: #EB534B;
 }
 
-.unmute, .stop {
+.unmute,
+.stop {
     color: #CC3B33;
 }
-
